@@ -19,6 +19,19 @@ app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './public/notes.html'));
 })
 
+// API ROUTES
+app.get('/api/notes', (req, res) => {
+    let results = notes;
+    res.json(results);
+});
+
+app.post('/api/notes', (req, res) => {
+    req.body.id = uniqid();
+    notes.push(req.body);
+    fs.writeFileSync('./db/db.json', JSON.stringify(notes));
+    res.send(req.body);
+});
+
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });
