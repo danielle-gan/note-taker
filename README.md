@@ -12,7 +12,7 @@ Create a simple note-taking application to organize thoughts and keep track of t
 - WHEN I click on the Write icon in the navigation at the top of the page THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
 ## Screenshots
-![Screenshot] ('./public/assets/screenshot.PNG')
+![Screenshot] (https://github.com/danielle-gan/note-taker/blob/main/public/assets/screenshot.PNG)
 
 ## Live Link
 [Live Link] (https://frozen-sea-22017.herokuapp.com/)
